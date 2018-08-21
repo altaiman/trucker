@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+<title>Дальнобойщик</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+</head>
+<body class="page page_inner">
+	<svg style="display: none;">
+  <symbol id="letsrock" viewBox="0 0 100 23">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo_letsrock" fill="white">
+            <g>
+                <path d="M20.195326,17.6070507 C21.2715776,14.1527034 22.2924703,11.8498632 23.3962305,8.53601991 C23.7825466,7.38468674 24.1136746,6.7386812 24.0032986,6.09284955 C23.810226,5.02567969 23.1202905,4.74484551 22.4305258,5.64334098 C22.3201498,5.81201537 22.2097737,5.95234551 22.1269063,6.12084602 C21.7130816,6.8230184 21.3542742,7.55318725 20.8852615,8.39568977 C19.4502024,10.9231973 18.3741216,14.2370406 17.6289981,15.3603773 C16.6632933,16.9330486 15.3111017,16.6240441 14.897277,15.0513727 C13.7935168,15.8658788 12.4690046,14.9953798 12.5241926,13.5630386 C12.5517012,12.2991978 12.8828293,10.6703596 13.0483933,9.37852243 C13.2691453,7.77785459 13.7106494,3.70567213 13.6831408,1.51516557 C13.6554614,1.2343314 13.6279528,1.03766053 13.5727648,0.841163558 C13.3243333,0.0828243448 12.5793806,-0.00133896169 11.9446331,0.447995716 C11.5859965,0.700659526 11.282377,1.2343314 11.1168129,1.93632989 C10.8408729,2.94733291 10.7581763,4.04267314 10.6201209,5.13801336 C10.5374243,5.86818221 9.35079664,12.383535 9.07485659,12.917033 C8.21935701,14.6863753 5.21169592,11.709533 2.9764961,11.035531 C0.520715102,10.3333586 -1.02454917,11.6251958 0.79665515,12.7485325 C2.01079136,13.5068717 6.06702464,16.7365517 7.06040881,17.831718 C7.30884028,18.0845557 7.36402829,18.1125522 7.61228891,18.3372195 C7.9710964,18.7023909 8.19184844,19.0393919 8.5781645,19.3763929 C10.8408729,21.4825622 14.8144096,22.4655688 17.8222415,20.8928974 C18.4293096,20.5558964 18.5671942,20.4153924 19.0086983,19.9660577 C19.7261424,19.2078924 19.8917065,18.5618868 20.195326,17.6070507" id="Fill-1"></path>
+                <path d="M57.7786339,21.6511149 L61.0347264,21.6511149 L62.3869181,15.2760922 C64.180443,15.0514249 64.235631,16.3152656 64.511571,17.6912661 L65.2290152,21.6511149 L68.5404666,21.6511149 L67.740155,17.6071028 C67.5469116,16.6240963 67.1054075,15.8097641 66.7467709,15.4165963 C66.5260188,15.1919289 66.3327754,15.0795953 66.0845147,14.8829244 C66.6087154,14.5459234 67.0227109,14.4055932 67.4365355,14.1527555 C68.0987917,13.7595877 68.7335392,13.1979194 69.3682867,12.0745827 C70.1409189,10.6984083 70.5272349,8.59223891 69.7546028,7.04756401 C68.9819707,5.44689617 67.7124756,5.13789163 65.4497672,5.13789163 C63.3803023,5.13789163 61.3383459,5.10989516 59.2687101,5.13789163 L58.772018,7.74973639 L60.5380343,7.74973639 L57.7786339,21.6511149 Z M62.9387982,12.6642475 L63.9321824,7.77773286 C65.3670706,7.72156603 67.740155,7.35656855 66.6915828,10.5580781 C65.9464593,12.8329219 64.5392505,12.6924178 62.9387982,12.6642475 L62.9387982,12.6642475 Z" id="Fill-4"></path>
+                <path d="M88.4358124,21.6511149 L91.3332683,21.6511149 L92.3541611,17.0172641 C93.5959767,16.9049304 93.7063528,17.5789325 93.9822928,18.9269365 L94.5064935,21.6511149 L97.5143254,21.6229446 L97.1003299,19.5447717 C96.6588258,17.5789325 96.8243899,17.213935 95.6931211,15.9782646 L99.1147777,10.9230756 L96.0242492,10.951246 C95.251617,12.0184158 94.5616815,13.3384234 93.8719168,14.4335897 L92.9060412,14.4335897 C92.8508532,13.5069239 94.5064935,6.96340071 94.7549249,5.13789163 L89.9535681,5.13789163 L89.4843846,7.74973639 L91.2228923,7.74973639 C90.9469523,9.96823942 88.463321,20.5277782 88.4358124,21.6511149" id="Fill-6"></path>
+                <polyline id="Fill-9" points="33.6061148 17.3543173 30.9019023 17.3543173 30.5430948 19.011152 28.3632539 19.011152 31.205351 5.1379438 25.9901695 5.19411064 25.3831014 7.74978856 27.2870023 7.74978856 24.3897172 21.6511671 32.7231066 21.6229967"></polyline>
+                <path d="M71.5757559,21.9038309 C71.8241873,22.0161646 72.127636,22.0723314 72.513952,22.1284982 C75.1906559,22.4093324 76.5462648,21.3936343 77.374085,20.2982941 C78.1190377,19.3154614 78.3638811,18.5618173 78.6675005,17.3543173 C79.1090046,15.7254791 79.3572652,13.8438032 78.3363725,12.4396323 C77.2601209,10.9512981 75.0802799,10.4737931 73.0106441,11.344466 C71.3825124,12.0464645 70.1960556,13.4506353 69.5889875,15.3603077 C69.285368,16.3433143 69.0922954,17.4946474 69.2026715,18.5899877 C69.3405561,20.162659 70.0856796,21.3421626 71.5757559,21.9038309 M72.4864435,18.3653203 C72.2932,17.6913183 72.403576,16.9329791 72.6520075,15.9501464 C72.9279475,14.8829766 73.7005797,13.1136343 74.9974125,13.562969 C76.0184761,13.8719735 76.0736641,16.9611494 74.9974125,18.5618173 C74.1695923,19.825658 72.9002681,20.022155 72.4864435,18.3653203" id="Fill-11"></path>
+                <path d="M35.2893662,21.0332623 C37.0343666,23.1700365 40.4495305,21.7072644 41.9671153,21.1735925 L41.4704233,18.9269191 C40.1184025,19.4044241 38.1316341,20.4154272 37.6072626,18.3372543 C39.8424624,18.5337513 41.8015513,17.8035824 42.9053115,15.8377432 C45.664712,10.8950617 38.7938902,9.1258934 35.8412463,13.0855683 C34.8201827,14.4617427 34.295982,15.9220804 34.2683026,17.8317528 C34.2683026,17.8317528 34.1220458,19.6038773 35.2893662,21.0332623 M37.69013,16.230911 C37.8556941,15.0795779 38.4075742,13.7877407 39.4284669,13.5630733 C40.256287,13.3945728 40.5669118,13.9918889 40.3943425,14.7144065 C40.3193346,15.02828 40.201099,15.3322417 39.925159,15.6130759 C39.4284669,16.1185774 38.6283262,16.2590814 37.69013,16.230911" id="Fill-13"></path>
+                <path d="M50.5213593,15.500777 C50.9696979,17.2756837 53.5015119,17.522783 53.8051313,18.3372891 C54.38452,19.8256232 51.6803075,20.0222941 50.1350433,18.7584534 L49.0864711,21.0051268 C49.8866118,22.0443002 52.3702431,22.3251343 53.9430159,21.9881333 C55.8470877,21.5949655 56.9231685,20.0222941 57.0060359,18.1126217 C57.0612239,17.2419488 56.8679805,16.7926142 56.1230278,16.0906157 C55.4607716,15.500777 54.6881395,15.3322765 54.0810714,14.9109383 C53.7499433,14.6862709 53.6395673,14.6301041 53.6670759,14.2089398 C53.7222639,13.4506006 54.329332,13.4787709 55.2400196,13.5067674 L55.0467761,14.6582744 L57.1715999,14.6301041 L58.5513002,10.3052578 L55.9574637,10.3334282 L55.8194083,10.9792598 C54.5225755,10.8950965 53.0092622,10.8533627 51.983927,11.6814322 C51.983927,11.6814322 49.9735799,13.3320068 50.5213593,15.500777" id="Fill-15"></path>
+                <path d="M80.9301748,21.2860305 C81.2061148,21.5386943 81.6201103,21.791532 82.2271784,21.9600325 C82.9169431,22.1846998 83.7172547,22.2126963 84.4898868,22.1003627 C84.9865789,22.0443697 85.3452155,21.9318621 85.6763436,21.8476988 C86.0903391,21.7353652 86.4214671,21.5948611 86.8352918,21.4263606 C87.0008558,21.3421973 87.1940993,21.2860305 87.3871719,21.1736968 L86.8904798,18.9550199 C85.9522836,19.2640244 82.585815,21.0051963 82.9446225,17.0453475 C83.1653746,14.7706777 83.8551393,13.2539992 86.3385997,13.5630038 L86.1455271,14.658344 L88.2426715,14.6301736 L89.6498803,10.3053274 L87.0837233,10.3053274 L86.8904798,11.0636666 C83.9380067,10.754662 82.3375544,11.5971646 81.0957388,13.31034 C80.0746752,14.6863405 79.6056625,16.6521797 79.7435471,18.6461893 C79.8264146,19.6290219 80.1575426,20.6120285 80.9301748,21.2860305" id="Fill-17"></path>
+                <polygon id="Fill-19" points="43.8159649 21.6511149 46.6582328 21.6511149 48.3413817 13.4787535 49.941834 13.5069239 50.7421456 10.9792424 48.8932618 10.9792424 49.5280093 7.74973639 46.9893609 7.74973639 46.0511647 10.9792424 44.533409 10.9792424 44.036717 13.4787535 45.3337206 13.4787535"></polygon>
+                <path d="M15.0076189,13.7876885 C15.559499,12.5800146 15.945815,10.8108463 16.0838705,9.71550605 C16.2217551,8.64833619 15.9183065,8.19900151 14.8143754,8.03050101 C14.5109268,7.97433417 14.2073073,8.00250454 13.9313673,8.22717188 C13.5175426,8.53600252 13.5727306,9.09767087 13.4071666,10.0245106 C13.1312266,11.934183 12.551667,13.9843594 13.3519786,14.6581875 C14.2073073,15.3603599 14.7039994,14.489687 15.0076189,13.7876885" id="Fill-21"></path>
+                <path d="M17.3255324,14.9110252 C18.2085405,13.422691 19.3123007,10.8108463 18.7604206,9.94017339 C18.291408,9.2381749 16.9944043,8.87300353 16.6080882,9.99634022 C16.3044688,10.8670131 16.0285287,12.2150171 15.8077767,12.9731825 C15.5595161,13.7876885 15.1732,14.8828548 15.5043281,15.4445232 C16.0837167,16.4557001 16.9392163,15.5288604 17.3255324,14.9110252" id="Fill-23"></path>
+                <polygon id="Fill-25" points="50.6593294 9.46280746 52.7289652 9.46280746 54.2190414 5.13796119 51.5423375 5.13796119"></polygon>
+            </g>
+        </g>
+    </g>
+  </symbol>
+</svg>
+
+
+	<header class="header">
+  <div class="header__top">
+    <div class="header__container container">
+      <div class="header__block header__block_wide">
+        <span class="user"><i class="fas fa-user-circle"></i> Василий Андреев</span>
+      </div>
+      <div class="header__block header__block_wide">
+        <div class="header__info">
+          <p>Кредитный лимит: <strong>1 500 000 руб</strong></p>
+        </div>
+        <div class="header__info">
+          <p>Отсрочка платежа: <strong>30 дней</strong></p>
+        </div>
+        <div class="header__info">
+          <p>Доступно: <strong>70 000 руб</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__mobile">
+    <div class="mobile">
+      <button class="mobile__menu-btn"></button>
+      <div class="mobile__menu">
+        <div class="mobile__block">
+          <div class="logo">
+            <a href="/">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="mobile__block">
+          <div class="city">
+            <span class="city__current"><i class="fas fa-map-marker-alt"></i> Ваш регион: <strong>Новосибирск</strong></span>
+          </div>
+        </div>
+        <div class="mobile__nav">
+
+        </div>
+      </div>
+      <div class="mobile__right">
+        <button class="mobile__btn"><i class="fas fa-mobile-alt"></i></button>
+        <button class="mobile__btn mobile__btn_search"></button>
+        <a href="#" class="mobile__btn mobile__btn_profile"></a>
+        <a href="#" class="mobile__btn mobile__btn_cart">
+          <span>0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="header__container container">
+      <div class="header__block">
+        <div class="city">
+          <span class="city__current"><i class="fas fa-map-marker-alt"></i> Ваш регион: <strong>Новосибирск</strong></span>
+        </div>
+        <div class="logo">
+          <a href="/">
+            <img src="img/logo.png" alt="">
+          </a>
+          <p>Запасные части, шины, сервис для европейских грузовиков и прицепов</p>
+        </div>
+      </div>
+      <div class="header__block header__block_main">
+        <div class="header__block-line">
+          <div class="header__contact">
+            <div class="tel">
+              <a href="tel:88007005629"><i class="fas fa-mobile-alt"></i>8 800 700 5629</a>
+              <i>единый бесплатный номер</i>
+            </div>
+            <div>
+              <a href="tel:+73852539595">+7 (3852) 53-95-95</a>
+              <button class="header__btn">Заказать звонок</button>
+            </div>
+
+          </div>
+          <div class="header__imp">
+            <a href="#" class="header__lk" data-open="registration">Личный кабинет</a>
+            <div class="cart">
+              <a href="#">Корзина</a>
+              <span>Нет товаров</span>
+            </div>
+          </div>
+        </div>
+        <div class="header__block-line">
+          <div class="search">
+            <input type="search" placeholder="Поиск по каталогу">
+            <button class="search__btn"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__nav">
+    <div class="container">
+      <nav class="nav">
+  <div class="nav__item">
+    <a href="#" class="nav__link nav__link_main">Каталог запчастей</a>
+  </div>
+  <div class="nav__item nav__item_drop">
+    <a href="#" class="nav__link nav__link_main">Каталог шин</a>
+    <ul class="drop">
+      <li><a href="#">Шины</a></li>
+      <li><a href="#">Диски</a></li>
+      <li><a href="#">Аксессуары</a></li>
+    </ul>
+  </div>
+  <div class="nav__item">
+    <a href="#" class="nav__link nav__link_main">Услуги и сервисы</a>
+  </div>
+  <div class="nav__item">
+    <a href="#" class="nav__link nav__link_main">Доставка</a>
+  </div>
+  <div class="nav__item">
+    <a href="#" class="nav__link nav__link_main">Гарантия</a>
+  </div>
+  <div class="nav__item">
+    <a href="#" class="nav__link nav__link_main">Акции</a>
+  </div>
+  <div class="nav__item">
+    <a href="#" class="nav__link nav__link_main">О компании</a>
+  </div>
+  <div class="nav__item">
+    <a href="#" class="nav__link nav__link_main">Контакты</a>
+  </div>
+</nav>
+
+    </div>
+  </div>
+</header>
+
+
+	<div class="page__wrapper">
+		<div class="page__sep">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li class="breadcrumbs__item"><a href="#">Главная</a></li>
+					<li class="breadcrumbs__item"><a href="#">Корзина</a></li>
+				</ul>
+			</div>
+		</div>
+		<section class="section">
+			<div class="container">
+				<div class="basket">
+					<div class="basket__main">
+						<div class="container__mid">
+							<h2 class="title">Корзина</h2>
+							<span class="caption caption_light">Товары в наличии</span>
+						</div>
+
+						<table class="table table_basket">
+  <thead>
+    <tr>
+      <th class="table__name">Наименование</th>
+      <th>Фото</th>
+      <th>Артикул</th>
+      <th>Производитель</th>
+      <th>Цена</th>
+      <th class="table__counter">Количество</th>
+      <th>Стоимость</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+						<div class="basket__sum">
+							<p>Сумма товаров в наличии: <strong>83 000 ₽</strong></p>
+						</div>
+
+
+						<div class="container__mid">
+							<span class="caption caption_light">Товары с удаленного склада</span>
+						</div>
+
+						<table class="table table_basket">
+  <thead>
+    <tr>
+      <th class="table__name">Наименование</th>
+      <th>Фото</th>
+      <th>Артикул</th>
+      <th>Производитель</th>
+      <th>Цена</th>
+      <th class="table__counter">Количество</th>
+      <th>Стоимость</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Втулка торм.вала (п) D=47.6 d=38.1 L=31.8 Meritor (1121162)(АМ4173)</td>
+      <td>
+        <div class="table__img">
+          <img src="pictures/c.jpg" alt="">
+        </div>
+      </td>
+      <td><span>1115422</span></td>
+      <td><span>Automann</span></td>
+      <td><span>80 ₽</span></td>
+      <td class="table__counter"><div class="counter">
+  <button class="counter__btn counter__btn_min counter__btn_disable"></button>
+  <input type="number" class="counter__field" value="1">
+  <button class="counter__btn counter__btn_plus"></button>
+</div>
+</td>
+      <td><span>80 ₽</span></td>
+      <td>
+        <button class="remove"></button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+						<div class="basket__sum">
+							<p>Сумма товаров в наличии: <strong>83 000 ₽</strong></p>
+						</div>
+					</div>
+					<div class="basket__sum basket__sum_all">
+						<p>Итого: <strong>83 000 ₽</strong></p>
+						<button class="btn btn_style btn_basket">Оформить заказ</button>
+					</div>
+				</div>
+		</div>
+	</section>
+
+
+
+</div>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__container container">
+      <div class="footer__block">
+        <div class="logo">
+          <a href="/">
+            <img src="img/logo-f.png" alt="">
+          </a>
+        </div>
+        <div class="footer__tel">
+          <a href="tel:88007005629"><i class="fas fa-mobile-alt"></i>8 800 700 56 29</a>
+          <button class="footer__btn">Заказать звонок</button>
+        </div>
+      </div>
+      <div class="footer__block">
+        <ul class="footer__nav">
+          <li><a href="#">Каталог запчастей</a></li>
+          <li><a href="#">Каталог шин</a></li>
+          <li><a href="#">Услуги и сервисы</a></li>
+
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантии</a></li>
+          <li><a href="#">Акции</a></li>
+
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <span class="footer__caption">Мы в соцсетях</span>
+        <ul class="social">
+          <li class="social__item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="social__item"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+          <li class="social__item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer__block">
+        <span class="footer__caption">Магазины в барнауле</span>
+        <p>ул. Попова, 206<br>Тел.: +7 (3852) 53-95-95</p>
+        <p>ул. Власихинская, 144а<br>Тел.: +7-964-603-44-24</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer__container container">
+    <div class="footer__block">
+      <p>2018 © Магазин “Дальнобойщик”. Все права защищены</p>
+    </div>
+    <div class="footer__block">
+      <p class="footer__dev">
+        Разработка сайта —
+        <svg>
+          <use xlink:href="#letsrock"/>
+        </svg>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<div class="page__modals">
+
+</div>
+
+<script src="js/libs.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
