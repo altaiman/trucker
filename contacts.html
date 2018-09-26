@@ -8,6 +8,7 @@
 <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body class="page page_inner">
 	<svg style="display: none;">
@@ -192,6 +193,22 @@
   </ul>
   <div class="contacts__map">
     <div id="map-contacts"></div>
+
+    <script>
+
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map-contacts", {
+            center: [55.76, 37.64],
+            zoom: 7,
+            controls: ['']
+        });
+
+        myMap.behaviors.disable('scrollzoom');
+    }
+
+    </script>
   </div>
 
   <div class="contacts__info" data-tabs-content="contacts">
@@ -319,8 +336,8 @@
 			</div>
 
 
-		</div>
-	</section>
+		</section>
+	</div>
 
 </div>
 

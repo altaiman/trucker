@@ -169,4 +169,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 		$('.page').toggleClass('page_fade');
 		$(this).parent().find('.mobile__menu').toggleClass('mobile__menu_show');
 	});
+
+	// $('.select').on('click', function() {})
+
+	$('.select .list').each(function (i, list) {
+		new SimpleBar(list);
+	});
 })(window);
